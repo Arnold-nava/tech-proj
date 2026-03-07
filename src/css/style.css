@@ -1,0 +1,11 @@
+:root {
+    --main-color: #020617;
+    --text-color: #d1fae5;
+    --card-color: #1e293b;
+    --border: 1px solid #00ffcc;
+    --shadow: 0px 0px 20px 1px rgba(2,181,94,0.75);
+
+    --btn-color: #1e293b;
+    --btn-hover: 0 0 10px #00ffcc;
+}
+
