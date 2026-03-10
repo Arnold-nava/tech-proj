@@ -1,0 +1,38 @@
+.hero {
+    display: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid;
+    box-shadow: var(--shadow);
+    
+}
+
+.brand img {
+    height: 60px;
+    width: 100%;
+}
+
+.side-icons {
+    display: flex;
+    align-self: center;
+    gap: 15px;
+    margin-right: 70px;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.side-icons button {
+    border: 0px;
+    background: none;
+    color: var(--text-color);
+    font-size: 25px;
+
+    cursor: pointer;
+}

@@ -1,42 +1,17 @@
-:root {
-    --main-color: #020617;
-    --text-color: #d1fae5;
-    --card-color: #1e293b;
-    --border: 1px solid #00ffcc;
-    --shadow: 0px 0px 20px 1px rgba(2,181,94,0.75);
-
-    --btn-color: #00ffcc;;
-    --btn-hover: 0 0 10px #00ffcc;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-
-    text-decoration: none;
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
-
-    background: var(--main-color);
-    color: var(--text-color);
 }
 
 .login-container {
     width: 300px;
     height: 400px;
     padding: 30px;
-    background-color: var(--card-color);
-    border: var(--border);
-    box-shadow: var(--shadow);
+    background-color: var(--bg-secondary);
+    box-shadow: var(--glow);
+    border-radius: 5px;
 }
 
 
@@ -78,14 +53,14 @@ body {
     font-size: 20px;
     border: none;
     border-radius: 5px;
-    background-color: var(--btn-color);
+    background-color: var(--accent);
     color: #000;
     margin-bottom: 16px;
     transition: box-shadow 0.3s ease;
 }
 
 .login-container button:hover {
-    box-shadow: var(--btn-hover);
+    box-shadow: var(--glow);
 }
 
 .login-container h3{
@@ -105,14 +80,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #13866f;
+    color: var(--accent2);
     border-radius: 50%;
-    background-color: var(--main-color);
+    background-color: var(--bg-main);
     padding: 12px;
 
     transition: color .3s ease;
 }
 
 .icons a:hover {
-    color: #00ffcc;
+    color: var(--accent);
 }
