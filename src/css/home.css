@@ -1,38 +1,108 @@
-.hero {
-    display: none;
-}
-
-
+/* Header container */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    border: 1px solid;
-    box-shadow: var(--shadow);
-    
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: var(--bg-secondary);
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Logo */
 .brand img {
     height: 60px;
-    width: 100%;
+    width: auto;
 }
 
+/* Nav links */
+.navlink {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navlink a:hover {
+    color: var(--btn-color);
+}
+
+/* Dropdown menu */
+.has-dropdown {
+    position: relative;
+}
+
+.products {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-secondary);
+    padding: 10px 0;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: var(--shadow);
+}
+
+.products li {
+    padding: 8px 15px;
+}
+
+.products li a:hover {
+    color: var(--btn-color);
+}
+
+/* Show dropdown on hover */
+.has-dropdown:hover .products {
+    display: block;
+}
+
+/* Right-side icons */
 .side-icons {
     display: flex;
-    align-self: center;
-    gap: 15px;
-    margin-right: 70px;
-
-    font-size: 25px;
-    cursor: pointer;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    color: var(--text-color);
 }
 
 .side-icons button {
-    border: 0px;
+    border: none;
     background: none;
-    color: var(--text-color);
-    font-size: 25px;
-
+    font-size: 22px;
     cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navlink {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .products {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .side-icons {
+        align-self: flex-end;
+    }
 }
