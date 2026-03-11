@@ -15,7 +15,6 @@ body {
     height: 100vh;
 
     background: var(--main-color);
-    color: var(--text-color);
 }
 
 .login-container {
@@ -25,6 +24,7 @@ body {
     background-color: var(--secondary-color);
     border: var(--border);
     box-shadow: var(--shadow);
+    color: var(--accent-color);
 }
 
 
@@ -43,6 +43,7 @@ body {
     border: none;
     border-bottom: 1px solid;
     outline: none;
+    color: var(--data-color);
 }
 
 .login input::placeholder {

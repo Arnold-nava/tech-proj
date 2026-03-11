@@ -1,108 +1,121 @@
-/* Header container */
-.header {
+/* --- NAVBAR --- */
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
-    background-color: var(--bg-secondary);
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--main-color);
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Logo */
-.brand img {
-    height: 60px;
-    width: auto;
-}
-
-/* Nav links */
-.navlink {
+/* --- LOGO --- */
+.brand {
     display: flex;
     align-items: center;
-    gap: 25px;
-    list-style: none;
+    gap: 12px;
 }
 
-.navlink a {
-    text-decoration: none;
+.brand img {
+    height: 2.5rem;
+}
+
+/* --- NAV LINKS --- */
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navlinks a {
+    font-family: var(--font-data);
+    font-size: 0.9rem;
+    font-weight: bold;
     color: var(--text-color);
-    font-weight: 500;
-    padding: 5px 10px;
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.navlink a:hover {
-    color: var(--btn-color);
+.navlinks a:hover {
+    color: var(--accent-color);
 }
 
-/* Dropdown menu */
-.has-dropdown {
+/* --- CONTACT BUTTON --- */
+.contact {
+    border-radius: 5px;
+    background-color: var(--component-color);
+    padding: 6px 16px;
+    color: var(--main-color);
+    font-weight: 800;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+/* --- DROPDOWNS --- */
+.product, .user {
     position: relative;
 }
 
-.products {
+.product-menu, .auth {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--bg-secondary);
-    padding: 10px 0;
-    border-radius: 8px;
-    min-width: 150px;
+    background-color: var(--secondary-color);
+    border: var(--border);
+    border-radius: 4px;
+    min-width: 160px;
+    padding: 8px 0;
     box-shadow: var(--shadow);
+    z-index: 100;
 }
 
-.products li {
-    padding: 8px 15px;
+.auth {
+    left: auto;
+    right: 0;
 }
 
-.products li a:hover {
-    color: var(--btn-color);
+.product-menu a, .auth a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-family: var(--font-data);
 }
 
-/* Show dropdown on hover */
-.has-dropdown:hover .products {
+.product-menu a:hover, .auth a:hover {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+/* Separate Hover Triggers */
+.product:hover .product-menu {
     display: block;
 }
 
-/* Right-side icons */
-.side-icons {
+.user:hover .auth {
+    display: block;
+}
+
+/* --- RIGHT MENU (Icons) --- */
+.menu {
     display: flex;
     align-items: center;
-    gap: 20px;
-    font-size: 22px;
-    color: var(--text-color);
+    gap: 25px;
 }
 
-.side-icons button {
+.menu a, .menu button {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
     border: none;
     background: none;
-    font-size: 22px;
-    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .navlink {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .products {
-        position: relative;
-        top: 0;
-        left: 0;
-        box-shadow: none;
-    }
-
-    .side-icons {
-        align-self: flex-end;
-    }
+.menu a:hover, .menu button:hover {
+    color: var(--accent-color);
 }
