@@ -46,9 +46,25 @@ body {
     color: var(--data-color);
 }
 
-.login input::placeholder {
+.login {
+    position: relative;
+}
+
+.login label {
+    position: absolute;
     color: #bebebe;
+    top: 0px;
+    left: 0px;
+    transition: all 0.2s ease-out;
 } 
+
+.login input:focus + label,
+.login input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: var(--accent-color);
+}
+
 
 .login i {
     position: absolute;
