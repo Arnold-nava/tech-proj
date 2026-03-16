@@ -22,62 +22,98 @@
 
 <body>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-    <div class="brand">
-        <img src="../src/asset/header.svg" alt="OG" class="icon">
-    </div>
-
-    <div class="navlinks">
-
-        <div class="product">
-            <a href="">Products</a>
-
-            <div class="product-menu">
-                <a href="">Phones</a>
-                <a href="">Laptops</a>
-                <a href="">Desktops</a>
-            </div>
+        <div class="brand">
+            <a href="../index.html">
+                <img src="../src/asset/header.svg" alt="OG" class="icon">
+            </a>
         </div>
 
-        <a href="">Home</a>
-        <a href="">About us</a>
-        <a href="" class="contact">Contact</a>
+        <div class="navlinks">
 
-    </div>
+            <div class="product">
+                <a href="#">Products</a>
 
-    <div class="menu">
+                <div class="product-menu">
+                    <a href="#">Phones</a>
+                    <a href="#">Laptops</a>
+                    <a href="#">Desktops</a>
+                </div>
+            </div>
 
-        <button type="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#" class="contact">Contact</a>
+        </div>
 
-        <a href="#">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
+        <div class="side-nav">
+            <button type="button" id="open-search"> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
 
-        <div class="user">
-
-            <a href="">
-                <i class="fa-regular fa-user"></i>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
             </a>
 
-            <div class="auth">
-                <a href="../index.html">Login</a>
-                <a href="">Sign up</a>
+            <div class="user">
+                <a href="">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <div class="auth">
+                    <a href="../index.html">Login</a>
+                    <a href="">Sign up</a>
+                </div>
             </div>
-
         </div>
+    </nav>
 
+    <div class="search-modal" id="search-modal"> 
+        <div class="search-box"> 
+            <input type="text" placeholder="Search products..."> 
+            <button type="button" id="close-search"> 
+                <i class="fa-solid fa-xmark"></i> 
+            </button> 
+        </div> 
     </div>
 
-</nav>
+    <header class="hero">
+       <div class="slide">
+         <div class="img">
+            <a href="">
+            <img src="../src/asset/hero/hero1.png" alt="">
+        </a>
+        </div>
+        <div class="img">
+            <a href="">
+            <img src="../src/asset/hero/hero2.png" alt="">
+        </a>
+        </div>
+        <div class="img">
+            <a href="">
+            <img src="../src/asset/hero/hero3.png" alt="">
+        </a>
+        </div>
+       </div>
+    </header>
 
-<header class="hero">
-    <a href="">
-        <img src="" alt="">
-    </a>
-</header>
+    <script src="../src/js/search.js"></script>
 
+    <script>
+    let index = 0;
+    const slides = document.querySelector('.slide');
+    const totalSlides = document.querySelectorAll('.slide .img').length;
+
+    function showNextSlide() {
+        index++;
+        if (index >= totalSlides) {
+            index = 0;
+        }
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Change image every 5 seconds
+    setInterval(showNextSlide, 5000);
+    </script>
 </body>
 </html>
