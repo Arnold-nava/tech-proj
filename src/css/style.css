@@ -4,10 +4,10 @@
     --text-color: #f8fafc;
     --accent-color: #54fbe5;
     --data-color: #acfeff;
-    --border-color: #2d3748;
+
     
-    --border: 1px solid var(--border-color);
-    --shadow: 0px 0px 20px 5px #00ffcc4d;
+    --border: 1px solid #54fbe5;
+    --shadow: 0px 0px 15px 2px #00ffcc4d;
 
     --component-color: #4af1d1;
     --component-hover: 0 0 15px 5px rgba(43, 255, 202, 0.3);
