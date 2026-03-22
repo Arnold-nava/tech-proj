@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNI GEAR</title>
+
+    <link rel="shortcut icon" href="../src/asset/favicon.png">
+
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/home.css">
+    <link rel="stylesheet" href="../src/css/product.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+     <nav class="navbar">
+
+        <div class="brand">
+            <a href="home.html">
+                <img src="../src/asset/header.svg" alt="OG" class="icon">
+            </a>
+        </div>
+
+        <div class="navlinks">
+
+            <div class="product">
+                <a href="product.html">Products <i class="fa-solid fa-angle-up"></i></a>
+
+                <div class="product-menu">
+                    <a href="#">Phones</a>
+                    <a href="#">Laptops</a>
+                    <a href="#">Desktops</a>
+                </div>
+            </div>
+
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#" class="contact">Contact</a>
+        </div>
+
+        <div class="side-nav">
+            <button type="button" id="open-search"> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
+            
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            
+            <div class="user">
+                <a href="">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <div class="auth">
+                    <a href="../index.html">Login</a>
+                    <a href="">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-modal" id="search-modal"> 
+        <form class="search-box" action="">
+                <input type="text" placeholder="Search products..."> 
+            <button type="submit" id="close-search"> 
+                <i class="fa-solid fa-xmark"></i> 
+            </button> 
+        </form>
+    </div>
+
+    <span class="title">Products</span>
+    <section class="product-list">
+        <div class="products">
+            <a href="">
+                <img src="../src/asset/phones/og6/og6fe.svg" alt="">
+                <h3>Phones</h3>
+            </a>
+        </div>
+        <div class="products">
+            <a href="">
+                <img src="../src/asset/laptops/phoenix/ember.svg" alt="">
+                <h3>Laptops</h3>
+            </a>
+        </div>
+        <div class="products">
+            <a href="">
+                <img src="../src/asset/desktops/nebula/soltice.svg" alt="">
+                <h3>Desktops</h3>
+            </a>
+        </div>
+    </section>
+
+    
+    <script src="../src/js/search.js"></script>
+</body>
+</html>
