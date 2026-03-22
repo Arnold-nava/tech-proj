@@ -1,19 +1,18 @@
+/* NAV CONTAINER */
 .navbar {
+    background-color: var(--secondary-color);
     display: flex;
-    flex-wrap: wrap;
-    padding: 5px 25px;
     justify-content: space-between;
     align-items: center;
-    background-color: var( --main-color);
-    border-bottom: var(--border);
-    font-family: var(--font-main);
+    padding: 30px 5%;
 }
 
-/* NAVIGATION BAR MENU*/
-.brand img{
-    height: 3.5rem;
+/* LOGO */
+.brand img {
+    height: 4rem;
 }
 
+/* NAVIGATION */
 .navlinks {
     display: flex;
     flex: 1;
@@ -23,30 +22,12 @@
 }
 
 .navlinks a {
-    text-decoration: none;
     font-weight: bold;
-    color: #ccc;
-    font-size: 0.9rem;
-
-    transition: all 0.3s ease;
-}
-
-.navlinks .contact {
-    border: 0px;
-    border-radius: 5px;
-    background-color: var(--component-color);
-    color: #000;
-    
+    font-size: 1.1rem;
     font-family: var(--font-main);
-    font-weight: bold;
-    font-size: 0.9rem;
-    padding: 5px 12px;
-
-    transition: all 0.3s ease;
-    cursor: pointer;
+    color: #ccc;
 }
 
-/* SIDE NAV */
 .side-nav {
     display: flex;
     
@@ -70,191 +51,10 @@
     cursor: pointer;
 }
 
-/* PRDUCT DROPDOWN */
-.product, .user {
-    position: relative;
-    
-}
-
-/* PRODUCTS */
 .product-menu {
-    position: absolute;
     display: none;
-    left: 50px;
-    top: 100%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    min-width: 120px;
-    z-index: 1;
 }
 
-.product-menu a {
-    display: block;
-    padding: 12px 17px;
-    font-size: 0.8rem;
-    color: #000;
-}
-
-/* USER */
-.auth {
-    position: absolute;
+.user {
     display: none;
-    right: 0;
-    top: 100%;
-    transform: translateX(50%);
-    background-color: #fff;
-    min-width: 70px;
-    z-index: 1;
-
-}
-
-.auth a {
-    display: block;
-    padding: 12px 17px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    font-family: var(--font-main);
-    color: #000;
-    text-decoration: none;
-}
-
-/* DROPDOWN HOVER */
-.product:hover .product-menu {
-    display: block;
-}
-
-.user:hover .auth {
-    display: block;
-}
-
-
-/* NAV HOVER */
-.navlinks a:hover,
-.side-nav a:hover {
-    color: var(--accent-color);
-    
-}
-
-.auth a:hover,
-.product-menu a:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.navlinks .contact:hover {
-    color: #000;
-    box-shadow: var(--shadow);
-}
-
-/* SEARCH MODAL */
-.search-modal {
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-
-    position: fixed;
-    top: 0;
-
-    width: 100%;
-    height: 100vh;
-
-    background: rgba(0,0,0,0.5);
-
-    z-index: 1000;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background: #fff;
-    padding: 15px 20px;
-    border-radius: 6px;
-
-    width: 500px;
-    margin: 0 auto;
-}
-
-.search-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-} 
-
-.search-box button {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.search-modal.active {
-    display: flex;
-}
-
-/* HERO */
-/* --- HERO SECTION --- */
-.hero {
-    width: 100%;
-    height: 80vh; /* Takes up 80% of the screen height */
-    overflow: hidden;
-    background-color: var(--main-color);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide {
-    display: flex;
-    width: 300%; /* Three images = 300% width */
-    height: 100%;
-    transition: transform 0.8s ease-in-out;
-}
-
-.slide .img {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This makes sure images don't look stretched */
-    filter: brightness(0.8); /* Makes text/UI pop more */
-    transition: filter 0.3s ease;
-}
-
-.slide img:hover {
-    filter: brightness(1);
-}
-
-/* --- OVERLAY TEXT (Optional) --- */
-/* If you want to add a title over the image later */
-.hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to top, var(--main-color), transparent);
-}
-
-/* --- DROPDOWN GAP FIX --- */
-/* This solves the "missing dropdown" issue without complex code */
-.product, .user {
-    padding-bottom: 20px; /* Extends the hover area to the menu */
-    margin-bottom: -20px; /* Pulls the layout back so it doesn't add space */
-}
-
-.product-menu, .auth {
-    top: 100%; /* Snaps exactly to the bottom of the nav */
-    background-color: var(--secondary-color);
-    border: var(--border);
-    box-shadow: var(--shadow);
 }

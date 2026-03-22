@@ -1,8 +1,8 @@
 :root {
-    --main-color: #0d161b;
-    --secondary-color: #131c21;
+    --main-color: #040408fd;
+    --secondary-color: #040404;
     --text-color: #f8fafc;
-    --accent-color: #4af1d1;
+    --accent-color: #2be2c9;
     --data-color: #86efac;
     --border-color: #2d3748;
     
@@ -12,7 +12,7 @@
     --component-color: #4af1d1;
     --component-hover: 0 0 15px rgba(74, 241, 209, 0.3);
 
-    --font-main: "Inter", sans-serif;    
+    --font-main: "Audiowide" ,"Fredoka", sans-serif;    
     --font-data: "JetBrains Mono", monospace; 
 }
 
@@ -22,6 +22,7 @@
     padding: 0;
 
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {

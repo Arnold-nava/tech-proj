@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ADJ Techs</title>
+<title>OMNI GEAR</title>
 
 <link rel="shortcut icon" href="../src/asset/favicon.png">
 
@@ -25,7 +25,7 @@
     <nav class="navbar">
 
         <div class="brand">
-            <a href="../index.html">
+            <a href="home.html">
                 <img src="../src/asset/header.svg" alt="OG" class="icon">
             </a>
         </div>
@@ -77,43 +77,10 @@
         </div> 
     </div>
 
-    <header class="hero">
-       <div class="slide">
-         <div class="img">
-            <a href="">
-            <img src="../src/asset/hero/hero1.png" alt="">
-        </a>
-        </div>
-        <div class="img">
-            <a href="">
-            <img src="../src/asset/hero/hero2.png" alt="">
-        </a>
-        </div>
-        <div class="img">
-            <a href="">
-            <img src="../src/asset/hero/hero3.png" alt="">
-        </a>
-        </div>
-       </div>
-    </header>
-
+    
     <script src="../src/js/search.js"></script>
 
-    <script>
-    let index = 0;
-    const slides = document.querySelector('.slide');
-    const totalSlides = document.querySelectorAll('.slide .img').length;
-
-    function showNextSlide() {
-        index++;
-        if (index >= totalSlides) {
-            index = 0;
-        }
-        slides.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    // Change image every 5 seconds
-    setInterval(showNextSlide, 5000);
+    
     </script>
 </body>
 </html>
