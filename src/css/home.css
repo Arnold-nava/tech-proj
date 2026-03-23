@@ -1,11 +1,10 @@
 /* NAV CONTAINER */
 .navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-glass);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
-
+    padding: 5px 5%;
 }
 
 .navbar a {
@@ -28,7 +27,7 @@
 .navlinks a {
     font-weight: bold;
     font-size: 1.1rem;
-    font-family: var(--font-main);
+    font-family: var(--main);
     color: #ccc;
 }
 
@@ -66,8 +65,8 @@
     position: absolute;
     display: none;
     flex-direction: column;
-    background-color: var(--main-color);
-    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     width: fit-content;
     gap: 10px;
     top: 100%;
@@ -89,7 +88,7 @@
 }
 
 .product-menu a, .auth a {
-    font-family: var(--font-data);
+    font-family: var(--secondary);
     font-size: .9rem;
     font-weight: normal;
     color: #d7d7d7;
@@ -98,15 +97,20 @@
 }
 
 .product-menu a:hover, .auth a:hover {
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--neon-teal);
     color: var(--accent-color);
 }
 
 /* HOVER EFFECTS */
 
 .navbar a:hover {
-    color: var(--accent-color);
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
 } 
+/* ACTIVE LINKS  */
+.active-link {
+    color: var(--neon-magenta);
+}
 
 /* SEARCH MODAL */
 .search-modal {

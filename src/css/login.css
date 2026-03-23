@@ -1,101 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-
-    text-decoration: none;
-}
-
 body {
+    background-color: var(--bg-main);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
-
-    background: var(--main-color);
 }
+
 
 .login-container {
+    position: relative;
     width: 300px;
-    height: 400px;
-    padding: 30px;
-    background-color: var(--secondary-color);
-    border: var(--border);
-    box-shadow: var(--shadow);
-    color: var(--text-color);
+    padding: 40px 30px;
+    background-color: var(--bg-card);
+    border-radius: 15px;
 }
 
+/* RGB EFFECT */
+.login-container::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid var(--neon-teal);
+    border-radius: 15px;
+    box-shadow: 0 0 15px var(--neon-teal);
+    pointer-events: none;
+
+    animation: rgb 10s linear infinite;
+    z-index: -1;
+}
 
 .login-container h1 {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.login input {
-    position: relative;
-    width: 100%;
-    padding: 5px 0;
-    margin-bottom: 15px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid;
-    outline: none;
-    color: var(--data-color);
+    margin-bottom: 18px;
+    font-family: var(--main);
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
 }
 
 .login {
     position: relative;
+
+}
+
+.login input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid var(--neon-cyan);
+    color: var(--neon-teal);
+    margin-bottom: 15px;
+    outline: none;
 }
 
 .login label {
     position: absolute;
-    color: #bebebe;
+    color: #b9b5b5;
+    font-size: 1rem;
     top: 0px;
-    left: 0px;
-    transition: all 0.2s ease-out;
-} 
+    left: 1px;
 
-.login input:focus + label,
-.login input:valid + label {
-    top: -10px;
-    font-size: 12px;
-    color: var(--accent-color);
+    transition: all 0.3s ease;
 }
-
 
 .login i {
     position: absolute;
-    transform: translateX(-100%);
+    transform: translate(-100%,100%);
     color: #bebebe;
 
     user-select: none;
     cursor: pointer;
 }
 
+/* LABEL EFFECT */
+.login input:focus + label,
+.login input:valid + label {
+    top: -15px;
+    font-size: 0.8rem;
+    color: var(--neon-cyan);
+}
+
+.signup a {
+    display: block;
+    text-align: right;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+    font-family: var(--secondary);
+}
+
 .login-container button {
     width: 100%;
-    padding: 7px 0;
+    padding: 7px 5px;
+    margin: 7px 0;
+    font-size: 1.2rem;
     font-weight: bold;
-    font-size: 20px;
-    border: none;
+    font-family: var(--secondary);
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
     border-radius: 5px;
-    background-color: var(--component-color);
-    color: #000;
-    margin-bottom: 16px;
+
     transition: all 0.3s ease;
 }
 
-.login-container button:hover {
-    box-shadow: var(--component-hover);
-    transform: translateY(-5px);
-}
-
-.login-container h3{
+.choice {
+    display: block;
     text-align: center;
-    font-size: 16px;
-    margin-bottom: 12px;
+    margin: 30px 0;
+    color: var(--text-soft);
+    font-size: 1rem;
+    font-family: var(--secondary);
 }
 
 .icons {
@@ -109,14 +125,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: #0f0f00;
     border-radius: 50%;
-    background-color: var(--main-color);
+    background-color: #fff;
     padding: 12px;
 
-    transition: color .3s ease;
+    transition: all .3s ease;
+}
+
+/* HOVERS/ EFFECTS MOUSE */
+.signup a:hover {
+    color: var(--neon-teal);
+}
+
+.signup a:active {
+    color: var(--neon-magenta);
+}
+
+.login-container button:hover {
+    box-shadow: var(--box-shadow);
+    transform: translateY(-5px);
+    text-shadow: var(--glow-text);
 }
 
 .icons a:hover {
-    color: var(--component-color);
+    background: linear-gradient(90deg,var(--neon-cyan), var(--neon-magenta));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transform: scale(1.2);
+}
+
+
+@keyframes rgb {
+    0% { filter: hue-rotate(0deg);}
+    100% { filter: hue-rotate(360deg);}
 }
