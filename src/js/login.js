@@ -30,7 +30,7 @@ function login(e) {
     // Check credentials: username OR email AND password
     if (username === user.username || username === user.email && password === user.password) {
         // Redirect to home page
-        window.location.href = "../pages/home.html";
+        window.location.href = "../src/pages/home.html";
     } 
     else if (username === "" || password === "")
     {
