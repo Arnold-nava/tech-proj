@@ -107,6 +107,12 @@
     color: var(--neon-cyan);
     text-shadow: var(--glow-text);
 } 
+
+.navbar button:hover {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+}
+
 /* ACTIVE LINKS  */
 .active-link {
     color: var(--neon-magenta);
