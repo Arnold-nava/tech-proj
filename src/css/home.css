@@ -113,11 +113,6 @@
     text-shadow: var(--glow-text);
 }
 
-/* ACTIVE LINKS  */
-.active-link {
-    color: var(--neon-magenta);
-}
-
 /* SEARCH MODAL */
 .search-modal {
     position: fixed;

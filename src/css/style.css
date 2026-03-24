@@ -16,7 +16,7 @@
     /* TYPOGRAPHY */
     --main: "Audiowide", sans-serif;
     --secondary: "JetBrains Mono", monospace;
-    --text-soft: #e0e0e0;         /* For long descriptions */
+    --text-soft: #e0e0e0e0;         /* For long descriptions */
 }
 
 
