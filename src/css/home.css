@@ -59,6 +59,7 @@
 .product, .user {
     position: relative;
     display: block;
+    z-index: 100;
 }
 
 .product-menu, .auth {
