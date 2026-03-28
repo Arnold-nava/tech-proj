@@ -63,7 +63,7 @@ body {
     font-size: 1rem;
     top: 0px;
     left: 1px;
-
+    transform: translateY(50%);
     transition: all 0.3s ease;
 }
 
