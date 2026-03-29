@@ -166,7 +166,7 @@
 
 /* HERO */
 .hero {
-    background-image: url(../asset/hero.svg);
+    background-image: linear-gradient(90deg, transparent, rgba(5, 5, 5, 0.8)), url(../asset/hero.svg);
     background-size: cover;
     height: 60vh;
     display: flex;
@@ -178,43 +178,70 @@
 .hero-text {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    gap: 25px;
+    gap: 20px;
+    width: 500px;
 }
 
-.hero-text h3 {
+.hero-text h1 {
+    font-size: 3rem;
+    color: #fff;
     font-family: var(--main);
-    font-size: 2rem;
-    background: linear-gradient(90deg, var(--neon-cyan),var(--neon-teal), var(--neon-magenta));
-    background-clip: text;
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: text;
-    color: transparent;
-
     text-shadow: var(--glow-text);
-
-    animation: rgb 10s linear infinite;
 }
 
 .hero-text p {
-    color: var(--text-soft) ;
+    color: var(--text-soft);
+    font-size: 1.2rem;
     font-family: var(--secondary);
+}
+
+.cta {
+    display: flex;
+    gap: 20px;
 }
 
 .cta .explore {
-    width: fit-content;
-    padding: 7px 5px;
+    width: 190px;
+    border: none;
+    border-radius: 15px;
     font-size: 1.2rem;
     font-weight: bold;
-    font-family: var(--secondary);
-    background: linear-gradient(90deg, #00ffff, #ff00ff);
-    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 10px 15px;  
+    background-color: var(--neon-cyan);
+    color: #000;
+    text-align: center;
 
     transition: all 0.3s ease;
-
 }
 
+.cta .contact {
+    width: 190px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 15px;  
+    background-color: whitesmoke;
+    color: #000;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+/* HERO HOVER */
+.cta .explore:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+    text-shadow: var(--glow-text);
+}
+
+.cta .contact:hover {
+    background-color: #ccc;
+    color: #fff;
+    transform: translateY(-5px);
+}
 
 @keyframes rgb {
     0% { filter: hue-rotate(0deg);}

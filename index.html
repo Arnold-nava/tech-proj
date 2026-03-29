@@ -1,55 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADJ Tehcs login/signup</title>
-    <link rel="shortcut icon" href="src/asset/favicon.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/login.css">
+<title>OMNI GEAR</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="src/asset/favicon.png">
+
+<link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="src/css/home.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    
 
-    <div class="login-container">
-       
-        <form id="login" onsubmit="login(event)">
-            <h1>Login</h1>
-            <div class="login user">
-                <input type="text" id="username" required>
-                <label for="username">username</label>
-                <i class="fa-regular fa-user"></i>
+    <nav class="navbar">
+
+        <div class="brand">
+            <a href="index.html">
+                <img src="src/asset/header.svg" alt="OG" class="icon">
+            </a>
+        </div>
+
+        <div class="navlinks">
+
+            <div class="product">
+                <a href="src/pages/product.html">Products <i class="fa-solid fa-angle-up"></i></a>
+
+                <div class="product-menu">
+                    <a href="src/pages/products/phones/og4.html">Phones</a>
+                    <a href="src/pages/products/laptops/phoenix.html">Laptops</a>
+                    <a href="src/pages/products/desktops/atlas.html">Desktops</a>
+                </div>
             </div>
 
-            <div class="login pass">
-                <input type="password" id="password" required>
-                <label for="password">password</label>
-                <i id="toggle" class="fa-solid fa-eye" title="show password"></i> 
-            </div>
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <a href="#" class="contact">Contact</a>
+        </div>
+
+        <div class="side-nav">
+            <button type="button" id="open-search"> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
             
-            <span class="signup">
-                <a href="">Create account?</a>
-            </span>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
             
-            <button type="submit" id="submit"> Login</button>
-
-
-            <span class="choice">or login with</span>
-            <div class="icons">
-                <a href="#"><i class="fa-brands fa-google"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <div class="user">
+                <button>
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <div class="auth">
+                    <a href="src/pages/authentication.html">Login</a>
+                    <a href="src/pages/authentication.html">Sign up</a>
+                </div>
             </div>
+        </div>
+    </nav>
+
+
+    <div class="search-modal" id="search-modal"> 
+        <form class="search-box" action="">
+                <input type="text" placeholder="Search products..."> 
+            <button type="submit" id="close-search"> 
+                <i class="fa-solid fa-xmark"></i> 
+            </button> 
         </form>
     </div>
 
-    <script src="src/js/login.js"></script>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Gear up for your ultimate rebirth</h1>
+            <p>Leave the lag of the past behind. Premium gaming gear built for the next level.</p>
+            <div class="cta">
+            <a href="src/pages/product.html" class="explore">Explore now <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="contact">Contact us <i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>  
+    </section>
+
+    <section class="featured">
+        <div class="featured-products">
+            <span class="text">Featured Products</span>
+        </div>
+    </section>
+
+    <script src="src/js/search.js"></script>
 </body>
 </html>

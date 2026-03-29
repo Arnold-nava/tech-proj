@@ -14,23 +14,23 @@ toggle.addEventListener("click", () => {
 });
 
 
+const user = {
+    username: "Admin",
+    password: "admin",
+    email: "Admin@try.com"
+};
 
 function login(e) {
     e.preventDefault(); // prevent form submission
 
-    const user = {
-        username: "Admin",
-        password: "admin",
-        email: "Admin@try.com"
-    };
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
     // Check credentials: username OR email AND password
-    if (username === user.username || username === user.email && password === user.password) {
+    if ((username === user.username || username === user.email) && password === user.password) {
         // Redirect to home page
-        window.location.href = "src/pages/home.html";
+        window.location.href = "../../../index.html";
     } 
     else if (username === "" || password === "")
     {
