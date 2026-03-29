@@ -166,34 +166,57 @@
 
 /* HERO */
 .hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    background-image: url(../asset/hero.svg);
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px;
 }
 
-.img-container {
+.hero-text {
     display: flex;
-    width: 300%;
-    height: 100%;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 25px;
+}
+
+.hero-text h3 {
+    font-family: var(--main);
+    font-size: 2rem;
+    background: linear-gradient(90deg, var(--neon-cyan),var(--neon-teal), var(--neon-magenta));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: text;
+    color: transparent;
+
+    text-shadow: var(--glow-text);
+
+    animation: rgb 10s linear infinite;
+}
+
+.hero-text p {
+    color: var(--text-soft) ;
+    font-family: var(--secondary);
+}
+
+.cta .explore {
+    width: fit-content;
+    padding: 7px 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--secondary);
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 5px;
+
     transition: all 0.3s ease;
+
 }
 
-.img  {
-    width: 100vw;
-    height: 100%;
-    flex-shrink: 0;
-}
 
-.img img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.hero-button {
-    position: absolute;
-    display: flex;
-    z-index: 5;
-    color: var(--neon-teal);
+@keyframes rgb {
+    0% { filter: hue-rotate(0deg);}
+    100% { filter: hue-rotate(360deg);}
 }

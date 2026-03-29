@@ -90,18 +90,11 @@
     color: #fff
 }
 
-.item-name .name {
-    position: relative;
-    font-family: var(--main);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.item-name .model {
-    position: relative;
-    font-family: var(--secondary);
+.products h3 {
     color: var(--text-soft);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+    font-family: var(--main);
+    margin-bottom: 30px;
 }
 
 /* HOVER EFFECTS */
@@ -114,16 +107,7 @@
     transform: scale(1.05);
 }
 
-.item-container {
-    display: flex;
-    padding: 0 5%;
-}
 
-.item-name:hover .name ,
-.item-name:hover .model {
-    text-shadow: var(--glow-text);
-    color: var(--neon-cyan);
-}
 
 /* NAVIGATION */
 .navigation {
@@ -210,11 +194,18 @@
     width: 100%;
 }
 
-.items h3 {
-    color: var(--text-soft);
-    font-size: 1.3rem;
+.item-name .name {
+    position: relative;
     font-family: var(--main);
-    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item-name .model {
+    position: relative;
+    font-family: var(--secondary);
+    color: var(--text-soft);
+    font-size: 0.9rem;
 }
 
 .specs li{
@@ -251,6 +242,17 @@
 /* ITEM HOVER */
 .items a:hover img {
     transform: scale(1.1)
+}
+
+.item-container {
+    display: flex;
+    padding: 0 5%;
+}
+
+.item-name:hover .name ,
+.item-name:hover .model {
+    text-shadow: var(--glow-text);
+    color: var(--neon-cyan);
 }
 
 .button a:hover {
