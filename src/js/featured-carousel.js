@@ -7,8 +7,7 @@ let current = 0;
 
 next.addEventListener('click', () => {
     current = (current + 1) % card.length;
-    const cardWidth = card[0].offsetWidth + 20;
-    count.style.transform = `translateX(-${current * cardWidth}px)`;
+    count.style.transform = `translateX(-${current * 100}%)`;
 });
 
 prev.addEventListener('click', () => {
