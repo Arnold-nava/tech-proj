@@ -30,4 +30,8 @@
 
 body {
     background-color: var(--bg-main);
+    background-image: linear-gradient(90deg, transparent, rgba(5, 5, 5, 0.8)),
+    url(../asset/darkness.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }   
