@@ -16,7 +16,7 @@
     /* TYPOGRAPHY */
     --main: "Audiowide", sans-serif;
     --secondary: "JetBrains Mono", monospace;
-    --text-soft: #e0e0e0e0;         /* For long descriptions */
+    --text-soft: #d5d5d5aa;         /* For long descriptions */
 }
 
 
@@ -35,3 +35,57 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }   
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* RATINGS */
+.rate{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.rates  {
+    color: var(--text-soft);
+    font-size: 1rem;
+}
+
+/* PRODUCTS RATING */
+.r1 span:nth-child(-n+4) {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+    
+    animation: rgb 5s infinite linear;
+}
+
+.r2 span:nth-child(-n+3) {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+    font-size: 1.3rem;
+
+    animation: rgb 5s infinite linear;
+}
+
+.r3 span:nth-child(-n+5) {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+    font-size: 1rem;
+
+    animation: rgb 5s infinite linear;
+}
+
+.rating {
+    color: #fff;
+    font-weight: bold;
+}
+
+.rating-counts {
+    color: var(--neon-magenta);
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: var(--secondary);
+
+}
