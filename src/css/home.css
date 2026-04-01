@@ -258,7 +258,7 @@
 .featured {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .carousel-container {
@@ -422,9 +422,264 @@
     transform: translateY(-5px);
 }
 
+/* FOOTER */
+.footer-section {
+    padding: 80px 2% 30px;
+    background-color: var(--bg-card);
+}
 
+.footer-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* FIRST SECTION */
+.first-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe input {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 7px 9px;
+    background-color: var(--bg-glass);
+    border: 1px solid var(--neon-teal);
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.subscribe label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: var(--secondary);
+    color: #ccc;
+}
+
+.subscribe button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: var(--secondary);
+    color: var(--bg-glass);
+    background-color: var(--neon-cyan);
+    padding: 7px 9px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.subscribe button:hover {
+    box-shadow: var(--shadow);
+}
+
+/* SECOND SECTION */
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.footer-nav a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-soft);
+    transition: all 0.3s ease;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--text-soft);
+    transition: all 0.3s ease;
+}
+
+.second-row a:hover {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+}
+
+/* LINE BREAKER */
+.line-breaker {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.line-breaker::after {
+    position: absolute;
+    content: "";
+    left: -3px;
+    right: -3px;
+    border: 3px solid var(--neon-teal);
+    animation: rgb 5s linear infinite;
+}
+
+/* THIRD SECTION */
+.third-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.country {
+    color: var(--text-soft);
+    font-family: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.country i {
+    color: var(--neon-cyan);
+    font-size: 1.1rem;
+
+    animation: rgb 5s linear infinite;
+}
+
+.eula {
+    display: flex;
+    gap: 35px;
+}
+.eula a {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    transition: all 0.3s ease;
+}
+
+.eula a:hover {
+    color: var(--neon-cyan);
+    text-shadow: var(--glow-text);
+}
+
+.copy-right {
+    font-size: 0.8rem;
+    color: var(--text-soft);
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.white {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.white::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-img img {
+    width: 100%;
+}
+
+/* REVIEW CARDS */
+.reviews {
+    position: relative;
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+}
+
+
+.review-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;   
+    gap: 25px;
+}
+
+.review-card {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    background-color: var(--bg-glass);
+}
+
+.review-card .user {
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-card .quote {
+    color: var(--text-soft);
+    font-family: var(--secondary);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.review-card .buyer {
+    color: #fff;
+    font-family: var(--secondary);
+    font-size: 1rem;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dot:hover {
+  background: var(--neon-cyan); /* Highlight on hover */
+}
 /* ANIMATION */
 @keyframes rgb {
     0% { filter: hue-rotate(0deg);}
     100% { filter: hue-rotate(360deg);}
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
