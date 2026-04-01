@@ -673,13 +673,3 @@
 .dot:hover {
   background: var(--neon-cyan); /* Highlight on hover */
 }
-/* ANIMATION */
-@keyframes rgb {
-    0% { filter: hue-rotate(0deg);}
-    100% { filter: hue-rotate(360deg);}
-}
-
-@keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
-}

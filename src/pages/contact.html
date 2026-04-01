@@ -25,7 +25,7 @@
     <nav class="navbar">
 
         <div class="brand">
-            <a href="index.html">
+            <a href="../../index.html">
                 <img src="../asset/header.svg" alt="OG" class="icon">
             </a>
         </div>
@@ -38,13 +38,13 @@
             <div class="product-menu">
                 <a href="../pages/products/phones/og4.html">Phones</a>
                 <a href="../pages/products/laptops/phoenix.html">Laptops</a>
-                <a href="../pages/products/desktops/atlas.html">Desktops</a>
+                <a href="../pages/products/desktops/nebula.html">Desktops</a>
             </div>
         </div>
 
             <a href="../index.html">Home</a>
-            <a href="#">About us</a>
-            <a href="#" class="contact">Contact</a>
+            <a href="../pages/about.html">About us</a>
+            <a href="contact.html" class="contact">Contact</a>
         </div>
 
         <div class="side-nav">
@@ -61,8 +61,8 @@
                     <i class="fa-regular fa-user"></i>
                 </button>
                 <div class="auth">
-                    <a href="../pages/authentication.html">Login</a>
-                    <a href="../pages/authentication.html">Sign up</a>
+                    <a href="../pages/login.html">Login</a>
+                    <a href="../pages/signup.html">Sign up</a>
                 </div>
             </div>
         </div>
@@ -78,28 +78,79 @@
         </form>
     </div>
 
-    <div class="contact">
+    <section class="contact-form">
         <div class="contact-text">
-            <span class="text first-text">Contact Us</span>
+            <a class="text first-text" href="contact.html">Contact us <i class="fa-solid fa-phone"></i></a>
             <span class="text second-text">Let's Get in Touch.</span>
+            <span class="text third-text">or just reach out mannualy at <a href="mailto:og.corp@example.com">og.corp@example.com</a></span>
         </div>
 
-        <form class="form" action="">
-            <label for="name">Full name</label>
-            <input type="text" id="name">
+        <div class="form-container">
+            <form class="form" action="">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Enter Full Name">
+    
+                    <label for="email-address">Email Address</label>
+                    <input type="email" id="email-address" placeholder="Enter Email address" required>
 
-            <label for="email-address">Email Address</label>
-            <input type="email" id="email-address">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="+63(9) 000-0000" required>
+                
+                    <label for="issue">Message/Issue</label>
+                    <textarea id="issue" placeholder="Enter your message here..." rows="5"></textarea>
 
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
-            <label for="issue">Message/Issue</label>
-            <input type="text" id="issue">
-
-            <input type="submit">
-        </form>
-    </div>
+    <footer class="footer-section">
+        <div class="footer-row first-row">
+            <div class="subscribe">
+                <form action="">
+                    <label for="email">GET THE LATEST DEALS AND MORE</label>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter email address">
+                        <button type="reset">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-row second-row">
+            <nav class="footer-nav">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About us</a>
+                <a href="../pages/contact.html">Contact us</a>
+                <a href="../pages/product.html">Products</a>
+            </nav>
+            
+            <nav class="footer-nav">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About us</a>
+                <a href="../pages/contact.html">Contact us</a>
+                <a href="../pages/product.html">Products</a>
+            </nav>
+        </div>
+        
+        <div class="line-breaker"></div>
+        
+        <div class="footer-row third-row">
+            <span class="country"><i class="fa-solid fa-globe"></i>Philippines</span>
+            
+            
+            <div class="eula">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">TERMS OF USE</a>
+                <span class="copy-right">© 2026 OMNI GEAR INC. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+        
+        <div class="logo-row">
+            <img src="../asset/icon.svg" alt="Omni Gear">
+        </div>
+        
+    </footer>
+    
 </body>
-</head>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJ Tehcs login/signup</title>
+    <link rel="shortcut icon" href="../asset/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    
+
+    <div class="auth-container">
+       
+        <form id="login" onsubmit="login(event)">
+            <h1>Login</h1>
+            <div class="auth">
+                <input type="text" id="username" required>
+                <label for="username">username</label>
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="auth">
+                <input type="password" id="password" required>
+                <label for="password">password</label>
+                <i id="toggle" class="fa-solid fa-eye" title="show password"></i> 
+            </div>
+            
+            <span class="have">
+                <a href="signup.html">Create account?</a>
+            </span>
+            
+            <button type="submit" id="submit"> Login</button>
+
+
+            <span class="choice">or login with</span>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

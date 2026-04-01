@@ -1,3 +1,144 @@
-.contact {
+.contact-form {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+/* SIDE TEXT */
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.text {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.first-text {
+    width: fit-content;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px 15px;  
+    background-color: whitesmoke;
+    color: #000;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.second-text {
+    width: fit-content;
+    color: var(--neon-cyan);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: var(--main);
+}
+
+.third-text {
+    color: var(--text-soft);
+    font-family: var(--secondary);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.third-text a {
+    color: var(--neon-magenta);
+}
+
+/* FORM */
+.form-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 30%;
+    margin: auto;
+}
+
+.form-container::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid var(--neon-teal);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    pointer-events: none;
+
+    animation: rgb 5s linear infinite;
+    z-index: -1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form input {
+    border-radius: 15px ;
+    font-size: 1.2rem;
+    font-family: var(--secondary);
+    color: #fff;
+    border: 1px solid var(--text-soft);
+    background-color: var(--bg-glass);
+    padding: 5px 12px;
+    margin-bottom: 10px;
+}
+
+
+.form input::placeholder {
+    font-size: 0.9rem;
+}
+
+.form textarea {
+    background-color: var(--bg-glass);
+    border-color: var(--text-soft);
+    color: #fff;
+    font-family: var(--secondary);
+    padding: 12px;
+
+    resize: none;
+    overflow: auto;
+}
+
+.form label {
+    color: var(--neon-cyan);
+}
+
+.form button {
+    width: 100%;
+    padding: 7px 5px;
+    margin: 7px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--secondary);
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.form button:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+    text-shadow: var(--glow-text);
+}
+
+.contact-text .first-text:hover {
+    background-color: #ccc;
+    color: #fff;
+    transform: translateY(-5px);
+} 
