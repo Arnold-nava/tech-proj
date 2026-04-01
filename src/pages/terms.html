@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OMNI GEAR</title>
+
+<link rel="shortcut icon" href="../asset/favicon.png">
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/eula.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="brand">
+            <a href="../../index.html">
+                <img src="../asset/header.svg" alt="OG" class="icon">
+            </a>
+        </div>
+
+        <div class="navlinks">
+
+        <div class="product">
+            <a href="../pages/product.html">Products <i class="fa-solid fa-angle-up"></i></a>
+
+            <div class="product-menu">
+                <a href="../pages/products/phones/og4.html">Phones</a>
+                <a href="../pages/products/laptops/phoenix.html">Laptops</a>
+                <a href="../pages/products/desktops/nebula.html">Desktops</a>
+            </div>
+        </div>
+
+            <a href="../../index.html">Home</a>
+            <a href="../pages/about.html">About us</a>
+            <a href="../pages/contact.html" class="contact">Contact</a>
+        </div>
+
+        <div class="side-nav">
+            <button type="button" id="open-search"> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
+            
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            
+            <div class="user">
+                <button>
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <div class="auth">
+                    <a href="../pages/login.html">Login</a>
+                    <a href="../pages/signup.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="search-modal" id="search-modal"> 
+        <form class="search-box" action="">
+                <input type="text" placeholder="Search products..."> 
+            <button type="submit" id="close-search"> 
+                <i class="fa-solid fa-xmark"></i> 
+            </button> 
+        </form>
+    </div>
+
+    <section class="eulas">
+        <div class="eula-nav">
+            <a class="text first-text" href="policy.html">PRIVACY POLICY</a>
+            <a class="text first-text" href="terms.html" id="active">TERM OF USE</a>
+        </div>
+
+        <div class="eula-text">
+            <h2>ARTICLE 1: THE OMNI BINDING PROTOCOL</h2>
+            <p>This document (the "Protocol") is a high-level legal contract between <b>OMNI GEAR INC.</b> (hereafter "The Command Center," "We," or "Us") and you, the Operative (hereafter "The User"). By initializing your session on our servers, procuring OG-class hardware, or accessing the Omni Universe digital interface, you enter into a binding legal engagement. If you do not accept these parameters in their absolute entirety, you must immediately terminate your uplink and cease all interaction with Omni Gear assets.</p>
+
+            <h2>ARTICLE 2: INTELLECTUAL PROPERTY & ARCHITECTURE</h2>
+            <p>The "Omni Gear" ecosystem—including but not limited to the Phoenix wing insignia, the "OG" monogram, proprietary RGB lighting algorithms, system firmware, the Titan/Nebula/Atlas product designs, and the source code of this interface—is the exclusive intellectual property of Omni Gear Inc. Protected under international patent, trademark, and trade secret laws, any attempt to "Decompile," "Reverse-Engineer," "Siphon Data," or "Clone" our hardware or software architecture will be met with immediate legal prosecution under the maximum extent of the law.</p>
+
+            <h2>ARTICLE 3: ACCOUNT OPERATIVE RESPONSIBILITIES</h2>
+            <p>To access the Omni Universe, you must maintain an active Operative Account. You are solely responsible for the integrity of your access tokens and biometric-equivalent passwords. 
+                <ul>
+                    <li><b>Security:</b> Any breach caused by user-side negligence (weak passwords, shared accounts) is not the liability of Omni Gear.</li>
+                    <li><b>Age Requirement:</b> Operatives must be at least 18 cycles of age, or have the explicit authorization of a legal guardian to engage in hardware procurement.</li>
+                    <li><b>Identity:</b> Use of "Botting" software or synthetic identities to bypass purchase limits on limited-edition gear (e.g., OG Founder's Edition Laptops) will result in a permanent MAC-address ban.</li>
+                </ul>
+            </p>
+
+            <h2>ARTICLE 4: HARDWARE PROCUREMENT & LOGISTICS CORE</h2>
+            <p>When you initiate an order for Omni Gear hardware, you acknowledge that logistics are subject to global supply chain variables.
+                <ul>
+                    <li><b>Precision Pricing:</b> While we strive for accuracy, Omni Gear reserves the right to cancel orders resulting from "Glitch-Pricing" or database errors.</li>
+                    <li><b>Logistical Deployment:</b> Risk of hardware damage passes to the Operative once the gear is cleared for departure from our central distribution hubs.</li>
+                    <li><b>Import Protocols:</b> For deployments outside the Philippines, the Operative is the "Importer of Record" and must cover all regional energy taxes, VAT, and customs duties.</li>
+                </ul>
+            </p>
+
+            <h2>ARTICLE 5: LIMITED HARDWARE WARRANTY & VOID PARAMETERS</h2>
+            <p>Omni Gear systems are engineered for peak "overclocked" stability within factory-set bounds. 
+                <ul>
+                    <li><b>Standard Coverage:</b> Covers manufacturing defects in the silicon, chassis, and cooling arrays for 12 months post-deployment.</li>
+                    <li><b>Void Events:</b> Warranty is immediately terminated if the system detects: (A) Liquid submersion, (B) Unauthorized chassis entry, (C) Use of non-certified power cells, or (D) Third-party BIOS "Jailbreaking."</li>
+                    <li><b>Software as-is:</b> We provide system firmware "As-Is." We are not liable for software bugs resulting from the installation of "Bloatware" or unverified third-party gaming mods.</li>
+                </ul>
+            </p>
+
+            <h2>ARTICLE 6: USER-GENERATED TELEMETRY & CONTENT</h2>
+            <p>By uploading "Battlestation" photos, setup reviews, or community feedback to the Omni Gear portal, you grant Us a non-revocable, global, royalty-free license to use, modify, and broadcast your content across our marketing channels. You waive all "moral rights" to such content in favor of the Omni Gear community growth.</p>
+
+            <h2>ARTICLE 7: DMCA & COPYRIGHT PROTECTION</h2>
+            <p>If you believe any content within the Omni Universe infringes upon your copyright, you must submit a formal "Takedown Notice" to our legal department at <a href="mailto:legal@omnigear.com">legal@omnigear.com</a> including proof of ownership and the specific URL of the infringing data packet.</p>
+
+            <h2>ARTICLE 8: SYSTEM DOWNTIME & NETWORK ANOMALIES</h2>
+            <p>The "Omni Universe" is a living digital entity. We reserve the right to initiate "Emergency Maintenance" or "Blackout Periods" to upgrade our server nodes. Omni Gear Inc. shall not be held liable for any loss of digital progress, "clutch-moment" interruptions, or transaction failures occurring during these essential maintenance cycles.</p>
+
+            <h2>ARTICLE 9: DISPUTE RESOLUTION & TRIBUNAL</h2>
+            <p>All grievances shall first be submitted to the <b>Omni Support Nexus</b>. If a resolution is not met within 60 solar days, the dispute shall be moved to mandatory arbitration in the Philippines. You waive your right to participate in a class-action lawsuit against Omni Gear Inc. or its founders.</p>
+
+            <h2>ARTICLE 10: AMENDMENTS TO THE PROTOCOL</h2>
+            <p>Omni Gear reserves the right to "Hotpatch" these Terms at any time. Significant updates will be broadcasted via your registered email. Continued use of Omni Gear services post-patch constitutes your acceptance of the new parameters.</p>
+
+            <h2>ARTICLE 11: SUBSCRIPTION SERVICES & RECURRING DATA</h2>
+            <p>Certain Omni Gear "Nexus" software features may require a recurring subscription fee. By activating these modules, you authorize Omni Gear to initiate automated billing cycles. Failure to maintain a valid payment uplink will result in the immediate deactivation of premium "Omni Cloud" sync features.</p>
+
+            <h2>ARTICLE 12: BETA ACCESS & ALPHA HARDWARE</h2>
+            <p>Operatives granted "Early Access" or "Beta" status to unreleased hardware or software acknowledge that such assets are <b>EXPERIMENTAL</b>. Omni Gear is not liable for system instability, thermal spikes, or data corruption resulting from the use of pre-production Omni prototypes.</p>
+
+            <h2>ARTICLE 13: FORCE MAJEURE (UNFORESEEN SYSTEM CRITICALS)</h2>
+            <p>Omni Gear Inc. is not liable for failure to perform its logistical obligations if such failure is the result of Acts of God (including but not limited to fires, floods, or solar flares), power grid failures, global pandemics, internet backbone outages, or sudden tectonic shifts affecting our manufacturing nodes.</p>
+
+            <h2>ARTICLE 14: ENTIRE AGREEMENT & SEVERABILITY</h2>
+            <p>This Protocol constitutes the entire agreement between the Operative and Omni Gear Inc. regarding the use of our gear and services. If any provision of this Protocol is found by a tribunal to be invalid, the remaining articles shall remain in full effect, ensuring the continuity of the Omni Universe legal framework.</p>
+
+            <div class="eula-footer-note">
+                <p>DOCUMENT ID: OG-TERM-2026-v2.44. STATUS: DEPLOYED. <br>
+                BY REMAINING ON THIS SERVER, YOU SIGN THE PROTOCOL WITH YOUR DIGITAL FOOTPRINT. <br>
+                <a href="mailto:support@omnigear.com">LEGAL_AFFAIRS@OMNIGEAR.COM</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-row first-row">
+            <div class="subscribe">
+                <form action="">
+                    <label for="email">GET THE LATEST DEALS AND MORE</label>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter email address">
+                        <button type="reset">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-row second-row">
+            <nav class="footer-nav">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About us</a>
+                <a href="../pages/contact.html">Contact us</a>
+                <a href="../pages/product.html">Products</a>
+            </nav>
+            
+            <nav class="footer-nav">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About us</a>
+                <a href="../pages/contact.html">Contact us</a>
+                <a href="../pages/product.html">Products</a>
+            </nav>
+        </div>
+        
+        <div class="line-breaker"></div>
+        
+        <div class="footer-row third-row">
+            <span class="country"><i class="fa-solid fa-globe"></i>Philippines</span>
+            
+            
+            <div class="eula">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">TERMS OF USE</a>
+                <span class="copy-right">© 2026 OMNI GEAR INC. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+        
+        <div class="logo-row">
+            <img src="../asset/icon.svg" alt="Omni Gear">
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    background: #fff;
+}
+
+.eulas {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.eula-nav {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-right: 2%;
+    padding-top: 50px;
+}
+
+.eula-nav a {
+    font-family: var(--secondary);
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+#active {
+    background-color: rgb(216, 216, 216);
+    color: var(--neon-magenta);
+}
+
+.eula-text {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    margin-bottom: 5%;
+    overflow: auto;
+}
+
+.eula-text::-webkit-scrollbar {
+    opacity: 0;
+}
+
+.eula-text h2 {
+    color: var(--neon-cyan); 
+    font-family: var(--secondary);
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.eula-text p, .eula-text li {
+    color: var(--text-soft);
+    margin-bottom: 15px;
+}
+
+.eula-text ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.eula-footer-note {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--neon-teal);
+    font-family: var(--secondary);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.eula-footer-note a {
+    color: var(--neon-magenta);
+}
