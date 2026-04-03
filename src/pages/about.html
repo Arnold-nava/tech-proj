@@ -10,7 +10,6 @@
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/home.css">
-<link rel="stylesheet" href="../css/product.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
@@ -33,19 +32,19 @@
 
         <div class="navlinks">
 
-            <div class="product">
-                <a href="product.html">Products <i class="fa-solid fa-angle-up"></i></a>
+        <div class="product">
+            <a href="product.html">Products <i class="fa-solid fa-angle-up"></i></a>
 
-                <div class="product-menu">
-                    <a href="products/phones/og4.html">Phones</a>
-                    <a href="products/laptops/phoenix.html">Laptops</a>
-                    <a href="products/desktops/nebula.html">Desktops</a>
-                </div>
+            <div class="product-menu">
+                <a href="../pages/products/phones/og4.html">Phones</a>
+                <a href="../pages/products/laptops/phoenix.html">Laptops</a>
+                <a href="../pages/products/desktops/nebula.html">Desktops</a>
             </div>
+        </div>
 
             <a href="../../index.html">Home</a>
-            <a href="../pages/about.html">About us</a>
-            <a href="../pages/contact.html" class="contact">Contact</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html" class="contact">Contact</a>
         </div>
 
         <div class="side-nav">
@@ -62,8 +61,8 @@
                     <i class="fa-regular fa-user"></i>
                 </button>
                 <div class="auth">
-                    <a href="login.html">Login</a>
-                    <a href="signup.html">Sign up</a>
+                    <a href="auth/login.html">Login</a>
+                    <a href="auth/login.html">Sign up</a>
                 </div>
             </div>
         </div>
@@ -77,6 +76,16 @@
             </button> 
         </form>
     </div>
+
+    <section class="loader">
+        <div class="loader-video">
+            <video src="../../src/asset/mp4/ads1.mp4"></video>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, impedit!</span>
+    </section>
 
     <footer class="footer-section">
         <div class="footer-row first-row">
@@ -94,15 +103,15 @@
         <div class="footer-row second-row">
             <nav class="footer-nav">
                 <a href="../../index.html">Home</a>
-                <a href="../pages/about.html">About us</a>
-                <a href="../pages/contact.html">Contact us</a>
-                <a href="../pages/product.html">Products</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+                <a href="product.html">Products</a>
             </nav>
             
             <div class="social">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         
@@ -113,8 +122,8 @@
             
             
             <div class="eula">
-                <a href="">PRIVACY POLICY</a>
-                <a href="">TERMS OF USE</a>
+                <a href="policy.html">PRIVACY POLICY</a>
+                <a href="terms.html">TERMS OF USE</a>
                 <span class="copy-right">© 2026 OMNI GEAR INC. ALL RIGHTS RESERVED.</span>
             </div>
         </div>
@@ -125,5 +134,7 @@
         
     </footer>
     
+    <script src="../js/search.js"></script>
+    <script src="../js/loader.js"></script>
 </body>
 </html>
