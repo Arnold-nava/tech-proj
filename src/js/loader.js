@@ -4,7 +4,5 @@ const loader = document.querySelector(`.loader`);
 
 video.addEventListener(`ended` ,() => {
     loader.style.animation = "smoother 1s linear";
-    loader.style.opacity ="0";
-
-    window.scrollY.false;
-})
+    loader.style.opacity = "0";
+});

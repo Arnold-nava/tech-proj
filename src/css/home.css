@@ -166,7 +166,7 @@
 
 /* HERO */
 .hero {
-    background-image: linear-gradient(90deg, transparent, rgba(5, 5, 5, 0.8)), url(../asset/hero.svg);
+    background-image: linear-gradient(90deg, transparent, rgba(5, 5, 5, 0.8)), url(../asset/hero/hero.svg);
     background-size: cover;
     height: 60vh;
     display: flex;
