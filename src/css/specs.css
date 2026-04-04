@@ -71,7 +71,7 @@
 }
 
 .btn-order {
-    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    background: var(--neon-cyan)
 }
 
 .btn-order:hover {

@@ -45,3 +45,55 @@
     color: var(--text-soft);
     font-family: var(--secondary);
 }
+
+/* REVIEW CARDS */
+.reviews {
+    position: relative;
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+}
+
+
+.review-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;   
+    gap: 25px;
+}
+
+.review-card {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    background-color: var(--bg-glass);
+}
+
+.review-card .user {
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-card .quote {
+    color: var(--text-soft);
+    font-family: var(--secondary);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.review-card .buyer {
+    color: #fff;
+    font-family: var(--secondary);
+    font-size: 1rem;
+}

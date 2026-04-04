@@ -30,10 +30,13 @@
 
 body {
     background-color: var(--bg-main);
-    background-image: linear-gradient(90deg, transparent, rgba(5, 5, 5, 0.8)),
-    url(../asset/darkness.png);
+    background-image: 
+        radial-gradient(circle at center, transparent 0%, var(--bg-main) 50%),
+        url('../asset/backround.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
     
 }   
 
@@ -113,6 +116,14 @@ body::-webkit-scrollbar {
     100% { filter: hue-rotate(360deg);}
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 @keyframes smoother {
     from {opacity: 1;}
     to {opacity: 0;}

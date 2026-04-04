@@ -37,7 +37,7 @@ function login(e) {
     const find = user.find(i => i.username === usernameInput || i.email === usernameInput && i.password === passwordInput) 
     if (find) {
         window.alert("Login successfully.")
-        window.location.href = ".../../../../index.html";
+        window.location.href = ".../../../../../index.html";
     } 
     else
     {
