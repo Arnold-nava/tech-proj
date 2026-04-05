@@ -58,6 +58,7 @@
 }
 
 .btn-cart, .btn-order {
+    text-align: center;
     width: 100%;
     padding: 15px;
     font-family: var(--secondary);
@@ -70,6 +71,7 @@
 }
 
 .btn-order {
+    color: #000;
     background: var(--neon-cyan)
 }
 

@@ -8,13 +8,12 @@
     color: var(--neon-teal);
     text-shadow: var(--glow-text);
 
-    animation: rgb 4s linear infinite;
+    animation: rgb 5s linear infinite;
 }
 
 .line {
-    display: flex; /* This overrides the default 'inline' behavior */
+    display: flex;
     position: relative;
-    inset: 0;
     justify-content: center;
     align-items: center;
     width: 90%; 
@@ -22,8 +21,9 @@
     background-size: 200% 100%;
     margin: auto;  
     background: linear-gradient(to right,var(--neon-cyan) 0%, var(--neon-cyan) 50%, var(--neon-magenta) 100%);  
-
-    animation: rgb 3s linear infinite;
+    box-shadow: var(--shadow);
+    
+    animation: rgb 5s linear infinite;
 }
 
 

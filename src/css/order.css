@@ -1,0 +1,124 @@
+.payment-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-container {
+    position: relative;
+    margin: 50px auto;
+    padding: 12px 5%;
+    background-color: var(--bg-glass);
+    width: 40%;
+    border-radius: 25px;
+    line-height: 1.8;
+}
+
+.payment-container::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid var(--neon-teal);
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    pointer-events: none;
+
+    animation: rgb 5s linear infinite;
+    z-index: -1;
+}
+.payment-container h1 {
+    color: var(--neon-cyan);
+    font-family: var(--main);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.input-header h3 {
+    color: var(--neon-teal);
+    font-family: var(--secondary);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.field-box {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.field-box input {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid var(--neon-cyan);
+    border-radius: 5px;
+    color: var(--neon-teal);
+    outline: none;
+}
+
+.field-box label {
+    color: var(--neon-teal);
+    font-family: var(--secondary);
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+}
+
+.method-select label{
+    color: var(--neon-cyan);
+}
+
+.card-info {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.credit:checked ~ .card-info {
+    display: block;
+    opacity: 1;
+}
+
+.payment-container button {
+    color: #000;
+    font-family: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    text-align: center;
+    background-color: var(--neon-cyan);
+    border-radius: 5px;
+    
+    padding: 5px 2px;
+    
+    transition: all 0.3s ease;
+}
+
+.payment-container button:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+.field-box input:focus {
+    box-shadow: var(--shadow);
+}

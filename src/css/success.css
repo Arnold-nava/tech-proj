@@ -1,0 +1,124 @@
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+
+.success-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: azure;
+    background-color: var(--bg-glass);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.success-container::after {
+    position: absolute;
+    content: "";
+    box-shadow: var(--shadow);
+    border: 3px solid var(--neon-teal);
+    background-color: var(--secondary-color);
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid var(--neon-teal);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    pointer-events: none;
+
+    animation: rgb 5s linear infinite;
+    z-index: -1;
+}
+
+.success-icon {
+    font-size: 64px;
+    color: var(--neon-magenta);
+    margin-bottom: 5px;
+
+    animation: rgb 5s linear infinite;
+}
+
+.success-container h1 {
+    font-family: var(--main);
+    color: var(--neon-cyan);
+}
+
+.success-container p {
+    font-family: var(--secondary);
+    color: var(--neon-teal);
+    font-size: 0.6rem;
+}
+
+.line {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 2px;
+    background-size: 200% 100%;
+    margin: auto;  
+    margin: 12px auto;
+    background: linear-gradient(to right,var(--neon-cyan) 0%, var(--neon-cyan) 50%, var(--neon-magenta) 100%);  
+    box-shadow: var(--shadow);
+    animation: rgb 5s linear infinite;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-table td {
+    padding: 8px 0;
+    font-family: var(--secondary);
+    font-size: 1rem;
+}
+
+.head {
+    color: var(--neon-cyan);
+    text-align: left;
+    padding-right: 20px;
+}
+
+.separator {
+    color: #fff;
+    text-align: center;
+    width: 1%;
+    padding-right: 15px;
+}
+
+.value {
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.success-action a {
+    color: #000;
+    font-family: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    text-align: center;
+    background-color: var(--neon-cyan);
+    border-radius: 5px;
+    
+    padding: 5px 2px;
+    
+    transition: all 0.3s ease;
+}
+
+.success-action a:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}

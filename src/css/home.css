@@ -18,6 +18,7 @@
 /* LOGO */
 .brand img {
     height: 4rem;
+    transition: all 0.3s ease;
 }
 
 /* NAVIGATION */
@@ -108,7 +109,10 @@
 }
 
 /* HOVER EFFECTS */
-
+.brand img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(var(--shadow));
+}
 .navbar a:hover {
     color: var(--neon-cyan);
     text-shadow: var(--glow-text);
@@ -244,6 +248,49 @@
     transform: translateY(-5px);
 }
 
+/* SALE SECTIONS */
+/* .promo {
+    font-size: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 60vh;
+    padding: 25px 5%;
+}
+
+.main-promo {
+    background-color: #00ffff;
+    display: grid;
+}
+
+.big-promo {
+    background-image: url(../asset/ads/ads1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.side-promo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.right-promo {
+    background-color: #84517d;
+}
+
+.bottom-promo {
+    background-color: #ff0026;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bot1 {
+    background-color: #fff;
+}
+
+.bot2 {
+    background-color: #9bff0e;
+} */
+ 
 /* FEATURED PRODUCTS */
 .header {
     display: flex;
@@ -292,7 +339,6 @@
     transform: scale(0.8);
 
 }
-
 
 .featured-card::after {
     position: absolute;
