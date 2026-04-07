@@ -70,6 +70,11 @@
     border: none;
 }
 
+.btn-cart {
+    background: #fff;
+    color: #000;
+}
+
 .btn-order {
     color: #000;
     background: var(--neon-cyan)

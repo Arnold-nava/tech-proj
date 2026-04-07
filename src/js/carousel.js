@@ -14,3 +14,4 @@ prev.addEventListener('click', () => {
     current = (current - 1 + card.length) % card.length;
     count.style.transform = `translateX(-${current * 100}%)`;
 });
+
