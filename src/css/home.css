@@ -448,7 +448,8 @@
     z-index: 100;
     opacity: 0.2;
     
-    bottom: 50%;
+    bottom: 60%;
+    transform: translateY(-100%);
     transition: all 0.3s ease;
 }
 
