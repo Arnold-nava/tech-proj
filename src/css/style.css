@@ -37,7 +37,7 @@ body {
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    
+    animation: loader 1s;
 }   
 
 body::-webkit-scrollbar {
@@ -127,4 +127,9 @@ body::-webkit-scrollbar {
 @keyframes smoother {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes loader {
+    from {transform: translateY(10%); opacity: 0; }
+    to {transform: translate(0%); opacity: 1;}
 }
