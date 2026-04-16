@@ -18,12 +18,10 @@
     align-items: center;
     width: 90%; 
     height: 2px;
-    background-size: 200% 100%;
     margin: auto;  
-    background: linear-gradient(to right,var(--neon-cyan) 0%, var(--neon-cyan) 50%, var(--neon-magenta) 100%);  
+    background: linear-gradient(90deg, transparent, var(--neon-teal), transparent);
     box-shadow: var(--shadow);
-    
-    animation: rgb 5s linear infinite;
+    animation: breathing 2.5s linear infinite;
 }
 
 
@@ -300,4 +298,13 @@
 .view:hover {
     box-shadow: var(--shadow);
     transform: translateY(-5px);
+}
+
+@keyframes breathing {
+  0% {
+        background-position: -200px;
+    }
+    100% {
+        background-position: 200px;
+    }
 }
